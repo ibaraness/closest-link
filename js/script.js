@@ -6,9 +6,15 @@ document.addEventListener('readystatechange', function(){
 		var selectedElement = null, numberOfElements = null;
 
 		ClosestElementFinder.init(function(element, verticallyClosest){
-			selectedElement = element.innerHTML;
-			numberOfElements = verticallyClosest.length;
-			requestAnimationFrame(updateDOM);
+			/**
+			 * An attempt to update the DOM only when change actually made
+			 */
+			if(selectedElement !== "" + element.innerHTML){
+				selectedElement = element.innerHTML;
+				numberOfElements = verticallyClosest.length;
+				requestAnimationFrame(updateDOM);
+			}
+			
 		});
 
 		function updateDOM(){
@@ -21,9 +27,12 @@ document.addEventListener('readystatechange', function(){
 
 
 var ClosestElementFinder = (function(){
-
+	/**
+	 * The function that initialize the script. The starting point of it all.
+	 * @param  {Function} callback - A user defined function to be called each time the values get changed
+	 * @param  {string}   selector - An optional selector the user can select instead of the default <a> tag
+	 */
 	function init(callback, selector){
-
 		/**
 		 * An optional selector to <a> tags, you can use any of the 
 		 * common selectors, like classes, tag names etc. 
@@ -65,6 +74,7 @@ var ClosestElementFinder = (function(){
 			var horizontalClosestData = findClosestX([].concat(verticallyClosestData), event.clientX, 1000);
 
 			callback(horizontalClosestData, verticallyClosestData);
+			
 		},10);
 
 		/**

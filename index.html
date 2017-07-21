@@ -7,6 +7,7 @@
 	<style type="text/css">
 		html {
 			font-family: arial;
+			color: #333;
 		}
 		h1 {
 			text-transform: uppercase;
@@ -27,15 +28,32 @@
 		.header {
 			clear: both;
 		}
+		.closest-link {
+			display: inline-block;
+		    width: 250px;
+		    padding-left: 10px;
+		    text-transform: capitalize;
+		    vertical-align: middle;
+		    line-height: 50px;
+		    height: 50px;
+		    color: #2196f3;
+		    border: 2px solid red;
+		}
+		.description {
+			    color: #146fb7;
+    			font-style: italic;
+		}
 	</style>
 </head>
 <body>
 <div class="main">
 	<div class="header">
 		<h1>My page</h1>
+		<p>Move the mouse cursor, and you'll see that the closest link text will show on the text box below</p>
 		<h2>Closest link to cursor: <span class="closest-link"></span></h2>
 		<h3>Elements on X axis: <span class="number-of-elements"></span></h3>
 		<h3><a href="#">first link</a></h3>
+		<p class="description">How it works? The script first tries to locate the closest Y coordinate of the links, to that of the mouse cursor. Next it checks if there are more than one elements on the same height, if there are, it checks for the closest one, using the X coordinate this time.</p>
 	</div>
 	<div class="left-col">
 		
