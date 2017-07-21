@@ -3,59 +3,59 @@
 <head>
 	<title>Find closest link</title>
 	<meta charset="utf-8">
+	<meta name="description" content="A demo of a JavaScript code that finds the closest <a> tags to the mouse cursor in the page">
+	<meta name="author" content="Idan Baraness">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<div class="main">
-	<div class="header">
-		<h1>My page</h1>
-		<p>Move the mouse cursor, and you'll see that the closest link text will show on the text box below</p>
-		<h2>Closest link to cursor: <span class="closest-link"></span></h2>
-		<h3>Elements on X axis: <span class="number-of-elements"></span></h3>
-		<h3><a href="#">first link</a></h3>
-		<p class="description">How it works? The script first tries to locate the closest Y coordinate of the links, to that of the mouse cursor. Next it checks if there are more than one elements on the same height, if there are, it checks for the closest one, using the X coordinate this time.</p>
+	<div class="main">
+		<div class="header">
+			<h1>My page</h1>
+			<p>Move the mouse cursor, and you'll see that the closest link text will show on the text box below</p>
+			<h2>Closest link to cursor: <span class="closest-link"></span></h2>
+			<h3>Elements on X axis: <span class="number-of-elements"></span></h3>
+			<h3><a href="#">first link</a></h3>
+			<p class="description">How it works? The script first tries to locate the closest Y coordinate of the links, to that of the mouse cursor. Next it checks if there are more than one elements on the same height, if there are, it checks for the closest one, using the X coordinate this time.</p>
+		</div>
+		<div class="left-col">
+			
+			<p>
+				Lorem <a href="#">first inline link</a>consectetur <a href="#">second inline link</a>adipiscing elit. Etiam ante ligula, <a href="#">third inline link</a> posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
+
+		Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
+
+
+			</p>
+			<a href="#">second link</a>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
+
+		Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
+
+
+			</p>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
+
+		Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
+
+
+			</p>
+			<a href="#">third link</a>
+		</div>
+		<div class="right-col">
+			<a href="#">Image link</a>
+			<img src="images/frog.jpg" width="400">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
+				<a href="#">forth inline link</a>
+		Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
+
+
+			</p>
+		</div>
 	</div>
-	<div class="left-col">
-		
-		<p>
-			Lorem <a href="#">first inline link</a>consectetur <a href="#">second inline link</a>adipiscing elit. Etiam ante ligula, <a href="#">third inline link</a> posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
-
-	Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
-
-
-		</p>
-		<a href="#">second link</a>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
-
-	Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
-
-
-		</p>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
-
-	Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
-
-
-		</p>
-		<a href="#">third link</a>
-	</div>
-	<div class="right-col">
-		<a href="#">Image link</a>
-		<img src="images/frog.jpg" width="400">
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ante ligula, posuere at feugiat sit amet, vestibulum semper arcu. Integer pretium ornare lorem mattis bibendum. Donec tristique vulputate libero, sit amet tempus purus. Nullam feugiat nunc sit amet turpis posuere tempor. In hac habitasse platea dictumst. Aenean imperdiet commodo iaculis. Mauris ac viverra nibh. Pellentesque vitae ligula eget arcu hendrerit dignissim ut quis lorem. Sed porttitor eros at purus lobortis aliquam. Proin ipsum felis, euismod vitae suscipit ut, iaculis at orci. Quisque libero justo, bibendum quis tempor eget, maximus eget nisl.
-			<a href="#">forth inline link</a>
-	Duis neque massa, molestie eu vestibulum in, mollis at lectus. Praesent in lacinia erat, non dignissim magna. Quisque eleifend lobortis mauris id aliquet. Fusce molestie consectetur urna nec consectetur. Sed sed velit in dui pellentesque vehicula vel non quam. Pellentesque ac auctor ex. Curabitur egestas augue a ex convallis, malesuada commodo erat vulputate. Praesent laoreet sed ligula ut gravida. In non leo rutrum, luctus sapien vel, auctor erat. Nam volutpat dapibus diam sit amet rhoncus. Curabitur luctus, neque in varius porttitor, ipsum libero dignissim ante, quis tempus ipsum erat condimentum metus. Nam sed eleifend libero. Nulla lectus nunc, dignissim a suscipit nec, ullamcorper eu elit. Sed sed sapien eu ipsum laoreet vehicula a nec nisi.
-
-
-		</p>
-	</div>
-</div>
-	
-
 	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
