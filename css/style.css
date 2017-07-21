@@ -1,0 +1,38 @@
+html {
+	font-family: arial;
+	color: #333;
+}
+h1 {
+	text-transform: uppercase;
+}
+.main{
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.left-col{
+	width: 60%;
+	margin-right: 5%;
+	float: left;
+}
+.right-col {
+	float: left;
+	width: 35%;
+}
+.header {
+	clear: both;
+}
+.closest-link {
+	display: inline-block;
+    width: 250px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    vertical-align: middle;
+    line-height: 50px;
+    height: 50px;
+    color: #2196f3;
+    border: 2px solid red;
+}
+.description {
+	color: #146fb7;
+	font-style: italic;
+}
